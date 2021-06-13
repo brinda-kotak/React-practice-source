@@ -1,0 +1,43 @@
+Class based components 
+
+
+Side effects
+
+React > To manage frontend, state, rendering DOM
+
+ - http call, depending on some external events we want to change state, or call a function 5 qty - 50 -first 2 customers delivery free
+ 
+Backend - DB ( http call to get the current / latest - quantity)
+ 
+ On when I add any product to cart - for purchase (I want to revalidate price and stock availability)
+
+constructor   >> it gets called when class is created / object is created : in React its used for setting initial state
+ComponentDidMount >> 
+ComponentWillMount >>
+ComponentDidUnount >> 
+
+everytime -> userEffect (() => {})
+
+only once -> useEffect( () => {
+console.log('Brinda'} , [])
+
+only when some state changes
+useEffect (() => {
+console.log(emailAddress.Length)}, emailAddress)
+
+useEffect (() => {
+console.log(contactnumber.Length)}, contactnumber)
+
+
+Timer based
+
+useEffect( () => {
+	setTimeout(()=>{
+		console.log(emailAddress.Length) / axios.put(http call)
+	},5000)
+	
+	return () => {
+		console.log(cleanup);
+	}
+}
+
